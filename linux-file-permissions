@@ -1,0 +1,29 @@
+//file permissions and access modes...
+
+3 file attributes in unix
+
+1. owner/user
+2. group
+3. other
+
+// to check permissions on a file
+
+ls -l filename
+
+=> permission are represented in groups of 3
+=> read(r/4), write(w/2), execute(x/1){run file as a program...}
+
+//representation
+
+-owner%group%other
+-UGO
+
+2 types of file changing permissions
+	-Absolute...with numbers... 
+		chmod 777 (gives all permissions...)
+		
+	-symbolic
+		chmod o+wx filename
+		+(add permission) , - (minus,remove), = (assign)
+		chmod u-r filename
+		chmod g = rx filename 
