@@ -18,7 +18,7 @@ int main()
  while(count!=n)
  {
  int min=INT_MAX,d,index;
- for(i=0;i<n;i++) //to check the minimum seek time of all request...
+ for(i=0;i<n;i++) //to check the minimum seek time difference of all request...
  {
  d=abs(RQ[i]-initial);
  if(min>d)
